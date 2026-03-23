@@ -1,0 +1,84 @@
+name: TinyText
+options:
+  bundleIdPrefix: com.tinytext
+  deploymentTarget:
+    macOS: "26.0"
+  xcodeVersion: "16.0"
+
+packages:
+  TinyKit:
+    path: Packages/TinyKit
+
+targets:
+  TinyText:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources/TinyText
+        excludes:
+          - "Resources"
+      - path: Sources/TinyText/Resources/Assets.xcassets
+        buildPhase: resources
+      - path: Sources/TinyText/Resources/AppIcon.icon
+        buildPhase: resources
+    info:
+      path: Sources/TinyText/Info.plist
+      properties:
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: Plain Text
+            CFBundleTypeRole: Editor
+            LSHandlerRank: Default
+            LSItemContentTypes:
+              - public.plain-text
+            CFBundleTypeExtensions:
+              - txt
+              - text
+          - CFBundleTypeName: Configuration File
+            CFBundleTypeRole: Editor
+            LSHandlerRank: Default
+            LSItemContentTypes:
+              - public.plain-text
+            CFBundleTypeExtensions:
+              - cfg
+              - conf
+              - ini
+              - config
+              - properties
+              - env
+              - rc
+          - CFBundleTypeName: Source Code
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes:
+              - public.source-code
+              - public.plain-text
+            CFBundleTypeExtensions:
+              - sh
+              - zsh
+              - bash
+              - fish
+              - bat
+        LSApplicationCategoryType: public.app-category.productivity
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tinytext.app
+        PRODUCT_NAME: "TinyText"
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS: YES
+        ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES: ""
+        INFOPLIST_KEY_LSApplicationCategoryType: "public.app-category.productivity"
+        INFOPLIST_KEY_NSHumanReadableCopyright: ""
+        SWIFT_VERSION: "5.9"
+        MACOSX_DEPLOYMENT_TARGET: "26.0"
+        DEVELOPMENT_TEAM: 992N457T8D
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_IDENTITY: "Apple Development"
+        CODE_SIGN_ENTITLEMENTS: TinyText.entitlements
+        ENABLE_HARDENED_RUNTIME: YES
+        SKIP_INSTALL: NO
+        INSTALL_PATH: /Applications
+    dependencies:
+      - package: TinyKit
+        product: TinyKit
