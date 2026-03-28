@@ -82,3 +82,9 @@ targets:
     dependencies:
       - package: TinyKit
         product: TinyKit
+
+schemes:
+  TinyText:
+    build:
+      targets:
+        TinyText: all

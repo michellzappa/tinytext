@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33430959595D19E71FA93222 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 93916807A16F9F8E0431C94E /* AppIcon.icon */; };
+		5D0D37F64BEC91B9FB74833C /* TinyTextApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E8482E9FC24FB5742C986 /* TinyTextApp.swift */; };
+		70DC9980C4DE2BC5E8F4F243 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DA53CD7EB4587067AD3302 /* ContentView.swift */; };
+		86F39CF0EDF916250BC258F4 /* TinyKit in Frameworks */ = {isa = PBXBuildFile; productRef = AB3EACB888976935692B3209 /* TinyKit */; };
+		CE1937E32820E14F8AB1AA40 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5819867F2E2478C8BD24A9 /* AppState.swift */; };
+		D142333E147E7B5AFC435264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F1061317B668DAC9A924AE /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F58E18203F8135ACCECDB46 /* TinyKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TinyKit; path = Packages/TinyKit; sourceTree = SOURCE_ROOT; };
+		50F1061317B668DAC9A924AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A5819867F2E2478C8BD24A9 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		7F2F56137639C23C7BA3582F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		93916807A16F9F8E0431C94E /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		A18E8482E9FC24FB5742C986 /* TinyTextApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyTextApp.swift; sourceTree = "<group>"; };
+		C1DA53CD7EB4587067AD3302 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3DEE673BC36B37D063123BF /* TinyText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74A9F9FA5562037AD6640313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86F39CF0EDF916250BC258F4 /* TinyKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18A261DAFF503DC8C3D437FF = {
+			isa = PBXGroup;
+			children = (
+				BD205D8A24D1B7C4FB38109D /* Packages */,
+				AD8488111B619D18037D9341 /* Resources */,
+				772DEA40AE97F01BC0AC7246 /* TinyText */,
+				7C4AA1BEAF17013310F405B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		772DEA40AE97F01BC0AC7246 /* TinyText */ = {
+			isa = PBXGroup;
+			children = (
+				7A5819867F2E2478C8BD24A9 /* AppState.swift */,
+				C1DA53CD7EB4587067AD3302 /* ContentView.swift */,
+				7F2F56137639C23C7BA3582F /* Info.plist */,
+				A18E8482E9FC24FB5742C986 /* TinyTextApp.swift */,
+			);
+			name = TinyText;
+			path = Sources/TinyText;
+			sourceTree = "<group>";
+		};
+		7C4AA1BEAF17013310F405B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3DEE673BC36B37D063123BF /* TinyText.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD8488111B619D18037D9341 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93916807A16F9F8E0431C94E /* AppIcon.icon */,
+				50F1061317B668DAC9A924AE /* Assets.xcassets */,
+			);
+			name = Resources;
+			path = Sources/TinyText/Resources;
+			sourceTree = "<group>";
+		};
+		BD205D8A24D1B7C4FB38109D /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				0F58E18203F8135ACCECDB46 /* TinyKit */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D64D1B893BB8416854EE4357 /* TinyText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F01A7E83C7A6ECDF37318D9 /* Build configuration list for PBXNativeTarget "TinyText" */;
+			buildPhases = (
+				3856F64DA26C00271C7E1922 /* Sources */,
+				540CBCCD26FB71BB788C8F3A /* Resources */,
+				74A9F9FA5562037AD6640313 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyText;
+			packageProductDependencies = (
+				AB3EACB888976935692B3209 /* TinyKit */,
+			);
+			productName = TinyText;
+			productReference = F3DEE673BC36B37D063123BF /* TinyText.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C8859F743BAFD625A5EFA46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					D64D1B893BB8416854EE4357 = {
+						DevelopmentTeam = 992N457T8D;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B9C514C34A0B184A934721BD /* Build configuration list for PBXProject "TinyText" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 18A261DAFF503DC8C3D437FF;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9B04F2CE3FB5CC491A72D058 /* XCLocalSwiftPackageReference "Packages/TinyKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7C4AA1BEAF17013310F405B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D64D1B893BB8416854EE4357 /* TinyText */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		540CBCCD26FB71BB788C8F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33430959595D19E71FA93222 /* AppIcon.icon in Resources */,
+				D142333E147E7B5AFC435264 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3856F64DA26C00271C7E1922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1937E32820E14F8AB1AA40 /* AppState.swift in Sources */,
+				70DC9980C4DE2BC5E8F4F243 /* ContentView.swift in Sources */,
+				5D0D37F64BEC91B9FB74833C /* TinyTextApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01D4435DA18C7F02C160A702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = TinyText.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 992N457T8D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Sources/TinyText/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = /Applications;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinytext.app;
+				PRODUCT_NAME = TinyText;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		90BEA51B4F455A82FFE68DBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		93CE2015C467D329EACA66B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A346DBF7103F2DB7418A40C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = TinyText.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 992N457T8D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Sources/TinyText/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = /Applications;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tinytext.app;
+				PRODUCT_NAME = TinyText;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F01A7E83C7A6ECDF37318D9 /* Build configuration list for PBXNativeTarget "TinyText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D4435DA18C7F02C160A702 /* Debug */,
+				A346DBF7103F2DB7418A40C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B9C514C34A0B184A934721BD /* Build configuration list for PBXProject "TinyText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90BEA51B4F455A82FFE68DBF /* Debug */,
+				93CE2015C467D329EACA66B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9B04F2CE3FB5CC491A72D058 /* XCLocalSwiftPackageReference "Packages/TinyKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/TinyKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB3EACB888976935692B3209 /* TinyKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TinyKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7C8859F743BAFD625A5EFA46 /* Project object */;
+}
