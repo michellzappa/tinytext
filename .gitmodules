@@ -1,0 +1,3 @@
+[submodule "Packages/TinyKit"]
+	path = Packages/TinyKit
+	url = https://github.com/michellzappa/tinykit.git

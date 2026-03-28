@@ -5,7 +5,7 @@ let package = Package(
     name: "TinyText",
     platforms: [.macOS(.v26)],
     dependencies: [
-        .package(path: "../Packages/TinyKit"),
+        .package(path: "Packages/TinyKit"),
     ],
     targets: [
         .executableTarget(
